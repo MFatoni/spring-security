@@ -74,3 +74,22 @@ git clone git@github.com:ReLive27/spring-security-oauth2-sample.git
 
 spring-oauth2-sample is Open Source software released under the
 [Apache 2.0 license](https://www.apache.org/licenses/LICENSE-2.0.html).
+
+# Spring Security Fundamental
+
+spring security
+
+- authentication : basic auth (default), certificate, jwt
+- authorization : filter, aspect
+
+type
+
+- encoding (using rule) -> abc -> cba 
+- encrypt (using key) -> bac (abc->xyz) -> yxz 
+- hash function (using hash) -> bac -> asjdkas 
+
+filter -> http basic -> auth manager (1) -> auth provider (can be multiple) -> user detail service & password encoder
+
+user -> granted authority (authority & roles), authority (action like read, write, delete, execute), role (visitor, admin)
+
+authorization -> endpoint level, method level
